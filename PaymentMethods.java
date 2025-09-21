@@ -7,7 +7,10 @@ class CreditCardPayment extends Payment {
         this.cardNumber = cardNumber;
         this.cardHolderName = cardHolderName;
     }
-    
+        getPaymentDate() {
+              System.out.println("From branch");
+        }
+
     @Override
     public void makePayment(double amount) {
         System.out.println("Processing Credit Card Payment...");
